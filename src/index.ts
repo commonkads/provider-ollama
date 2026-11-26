@@ -6,7 +6,7 @@ export type { OllamaTextInferenceOptions } from './ollama.js';
 
 export interface OllamaProviderOptions {
   type: 'ollama';
-  model: string;
+  model?: string;
   baseUrl?: string;
   numCtx?: number;
 }
