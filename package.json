@@ -1,6 +1,6 @@
 {
   "name": "@commonkads/provider-ollama",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ollama provider implementation for the CommonKADS engine",
   "type": "module",
   "author": "Rob Proper",
@@ -31,7 +31,7 @@
     "release": "npm publish"
   },
   "dependencies": {
-    "@commonkads/engine": "^0.1.0"
+    "@commonkads/engine": "^0.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
