@@ -1,4 +1,4 @@
-import type { IInferenceProvider, InferenceOptions, ProviderFileConfig } from '@commonkads/engine';
+import type { InferenceProvider, InferenceOptions, ProviderFileConfig } from '@commonkads/engine';
 import { createDiagnosticsLogger, loadProviderConfig } from '@commonkads/engine';
 
 const logger = createDiagnosticsLogger('providers:ollama');
@@ -14,8 +14,8 @@ export interface OllamaTextInferenceOptions {
   configFile?: string;
 }
 
-/** `IInferenceProvider` backed by a locally-hosted Ollama model. No API key required. */
-export class OllamaTextInference implements IInferenceProvider {
+/** `InferenceProvider` backed by a locally-hosted Ollama model. No API key required. */
+export class OllamaTextInference implements InferenceProvider {
   private readonly baseUrl: string;
   private readonly modelId: string;
   private readonly numCtx: number | undefined;
